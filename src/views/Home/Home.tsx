@@ -1,12 +1,10 @@
-// import React from "react";
+import MapComponent from "../../components/Map/Map";
 
 const Home = () => 
 {
     return (
-        <div>
-            <h1>
-                hello, vista!
-            </h1>
+        <div style={{ height: "100vh", width: "100%", display: "flex", flexDirection: "column" }}>
+            <MapComponent />
         </div>
     )
 };
