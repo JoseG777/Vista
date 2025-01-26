@@ -1,51 +1,40 @@
-/*#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}*/
+/* App.cs */
 
+html,
+body,
 #root {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  text-align: unset;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
 }
 
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+:root {
+  --primary-color: #2C3E50;
+  --secondary-color: #1ABC9C;
+  --accent-color: #E67E22;
+  --background-color: #F4F4F4;
+  --text-color: #333333;
+}
+
+.divider {
+  border-top: 2px solid var(--primary-color);
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    font-size: 90%;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
