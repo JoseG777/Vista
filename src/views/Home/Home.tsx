@@ -7,9 +7,9 @@ const Home: React.FC = () => {
   const zoom = 13;
 
   const pins = [
-    { lat: 34.0522, lng: -118.2437 }, 
-    { lat: 40.7128, lng: -74.006 }, 
-    { lat: 37.7749, lng: -122.4194 }, 
+    { lat: 34.0522, lng: -118.2437, state: "California"}, 
+    { lat: 40.7128, lng: -74.006, state: "New York" }, 
+    { lat: 37.7749, lng: -122.4194, state: "California" }, 
   ];
 
   return (
