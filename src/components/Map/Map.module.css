@@ -11,7 +11,7 @@
 .searchContainer {
   position: absolute;
   top: -50px;
-  left: 14%;
+  left: 16%;
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
@@ -39,13 +39,13 @@
 
 .stateSelector {
   position: relative;
-  width: 200px; 
+  width: 250px;
 }
 
 .stateSelector select {
-  width: 17vh;
+  width: 100%;
   padding: 10px;
-  padding-right: 30px;
+  padding-right: 40px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 16px;
@@ -53,7 +53,7 @@
   color: var(--text-color);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  appearance: none; 
+  appearance: none;
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -72,7 +72,7 @@
   content: "▼";
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 15px;
   transform: translateY(-50%);
   font-size: 14px;
   color: var(--primary-color);

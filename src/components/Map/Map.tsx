@@ -80,7 +80,7 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom, pins }) => {
   const [mapZoom, setMapZoom] = useState<number>(zoom);
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "",
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     libraries: ["places"],
   });
 
@@ -136,8 +136,6 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom, pins }) => {
   
   
   
-
-
   useEffect(() => {
     if (mapRef.current) {
       if (markersRef.current) {
@@ -166,7 +164,6 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom, pins }) => {
       setMapZoom(7);
     }
   }, [selectedState]);
-
 
 
 
@@ -223,6 +220,7 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom, pins }) => {
         zoom={selectedState ? mapZoom : zoom}
         onLoad={handleMapLoad}
       />
+
     </div>
 
   );
